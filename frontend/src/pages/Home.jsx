@@ -42,7 +42,7 @@ const Home = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:8080/quote?type=${"hindi shayari"}&keyword=${keyword}&words=50`
+        `https://sayari.onrender.com/quote?type=${"hindi shayari"}&keyword=${keyword}&words=50`
       );
       console.log(response?.data?.message);
       setLoading(false);
@@ -58,7 +58,7 @@ const Home = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:8080/quote?type=${"quote"}&keyword=${keyword}&words=50`
+        `https://sayari.onrender.com/quote?type=${"quote"}&keyword=${keyword}&words=50`
       );
       console.log(response?.data?.message);
       setLoading(false);
@@ -73,7 +73,7 @@ const Home = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:8080/quote?type=${"story"}&keyword=${keyword}&words=200`
+        `https://sayari.onrender.com/quote?type=${"story"}&keyword=${keyword}&words=200`
       );
       console.log(response?.data?.message);
       setLoading(false);
